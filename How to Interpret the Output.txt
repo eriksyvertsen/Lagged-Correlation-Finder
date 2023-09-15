@@ -1,0 +1,24 @@
+The output of the cross-correlation analysis provides information about the relationship between two time series (in this case, 'Weekly Legal Demand' and 'Weekly LOI') as a function of the lag between them. Here's how to interpret the key components of the output:
+
+Lag: The horizontal x-axis of the plot represents the lag or time shift between the two time series. A positive lag indicates that 'Weekly LOI' is shifted to the right (in the future) relative to 'Weekly Legal Demand,' while a negative lag means 'Weekly LOI' is shifted to the left (in the past).
+
+Cross-Correlation: The vertical y-axis of the plot represents the cross-correlation coefficient. It measures the similarity or relationship between the two time series at different lags. The cross-correlation coefficient varies between -1 and 1, where:
+
+A value of 1 indicates a perfect positive linear relationship.
+A value of -1 indicates a perfect negative linear relationship.
+A value near 0 suggests no significant linear relationship.
+Peak Correlation: The highest peak in the cross-correlation plot indicates the lag at which the two time series are most strongly correlated. This lag represents the time shift between the two series where they align most closely.
+
+Significance: In some applications, you may want to assess the statistical significance of the cross-correlation values. You can use confidence intervals or statistical tests to determine if the observed correlations are statistically meaningful.
+
+Interpreting the output typically involves looking for significant peaks in the cross-correlation plot. If you see a peak with a high positive or negative value, it suggests a strong linear relationship between the two series at that particular lag.
+
+Here are some common scenarios:
+
+Positive Peak: If you have a high positive peak at a specific lag, it suggests that one time series is leading or lagging the other, and there is a positive relationship between them. For example, it might indicate that an increase in 'Weekly Legal Demand' is followed by an increase in 'Weekly LOI' with a certain time delay.
+
+Negative Peak: A high negative peak at a particular lag indicates an inverse relationship or negative correlation between the two series. An increase in one series is followed by a decrease in the other series.
+
+No Significant Peaks: If the cross-correlation plot does not exhibit any significant peaks (i.e., values near zero for all lags), it suggests that there is no strong linear relationship or lagged correlation between the two series.
+
+In practice, you may need domain-specific knowledge to interpret the results effectively. Additionally, the presence of peaks does not necessarily imply causation, and further analysis may be required to understand the underlying dynamics of the relationship between the time series.
